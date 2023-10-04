@@ -42,6 +42,7 @@ const PokedexPage = () => {
   const handleSearch = (event) => {
     event.preventDefault()
     setInputValue(inputSearch.current.value.trim().toLowerCase())
+    setItemOffset(0)
   }
 
   return (
