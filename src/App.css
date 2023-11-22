@@ -220,7 +220,8 @@
 }
 .PokedexIdPage__div1__img{
     position: absolute;
-    width: 80%;
+    width: 70%;
+    max-width: 540px;
     left: 50%;
     transform: translate(-50%);
     top: 1rem;
