@@ -104,6 +104,22 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
+/*? PokeFooter*/
+.pokeFooter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.pokeFooter__div1{
+    background-color: rgb(17, 1, 4);
+    width: 100vw;
+    height: 7vh;
+}
+.pokeFooter__div2{
+    background-color: rgb(214, 0, 43);
+    width: 100vw;
+    height: 15vh;
+}
 /*! PokeCard*/
 .pokeCard{
     display: flex;

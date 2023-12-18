@@ -4,6 +4,7 @@ import useFetch from "../hooks/useFetch"
 import PokeCard from '../components/PokedexPage/pokeCard'
 import SelectType from '../components/PokedexPage/SelectType'
 import { Box, Pagination } from "@mui/material";
+import PokeFooter from '../components/PokeFooter'
 
 const PokedexPage = () => {
   
@@ -50,7 +51,7 @@ const PokedexPage = () => {
       <main className='pokedexPage'>
         <header className='pokedexPage__header'>
           <div className='pokedexPage__header__div1'> 
-            <img className='pokedexPage__header__img' src="/src/assets/pokedex_title.png" alt="Pokedex" />
+            <img className='pokedexPage__header__img' src="/images/pokedex_title.png" alt="Pokedex" />
           </div>
           <div className='pokedexPage__header__div2'> </div>
         </header>
@@ -89,6 +90,7 @@ const PokedexPage = () => {
           /> 
         </Box>
       </div>
+      <PokeFooter/>
     </>
   )
 }
