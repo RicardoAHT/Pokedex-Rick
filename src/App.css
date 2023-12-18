@@ -49,20 +49,6 @@
     background-color: gray;
 }
 /*! PokedexPage */
-.pokedexPage__header__div1{
-    background-color: rgb(214, 0, 43);
-    width: 100vw;
-    height: 15vh;
-}
-.pokedexPage__header__img{
-    margin: 2rem;
-    width: 50vw;
-}
-.pokedexPage__header__div2{
-    background-color: rgb(17, 1, 4);
-    width: 100vw;
-    height: 7vh;
-}
 .pokedexPage__h2{
     color: rgb(214, 0, 43);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.653);
@@ -103,6 +89,21 @@
     gap: 2rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+/*? PokeHeader */
+.PokeHeader__div1{
+    background-color: rgb(214, 0, 43);
+    width: 100vw;
+    height: 15vh;
+}
+.PokeHeader__img{
+    margin: 2rem;
+    width: 50vw;
+}
+.PokeHeader__div2{
+    background-color: rgb(17, 1, 4);
+    width: 100vw;
+    height: 7vh;
 }
 /*? PokeFooter*/
 .pokeFooter{

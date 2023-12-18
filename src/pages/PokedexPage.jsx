@@ -5,6 +5,7 @@ import PokeCard from '../components/PokedexPage/pokeCard'
 import SelectType from '../components/PokedexPage/SelectType'
 import { Box, Pagination } from "@mui/material";
 import PokeFooter from '../components/PokeFooter'
+import PokeHeader from '../components/PokeHeader'
 
 const PokedexPage = () => {
   
@@ -48,13 +49,8 @@ const PokedexPage = () => {
 
   return (
     <>
+      <PokeHeader/>
       <main className='pokedexPage'>
-        <header className='pokedexPage__header'>
-          <div className='pokedexPage__header__div1'> 
-            <img className='pokedexPage__header__img' src="/images/pokedex_title.png" alt="Pokedex" />
-          </div>
-          <div className='pokedexPage__header__div2'> </div>
-        </header>
         <h2 className='pokedexPage__h2'>Hello {trainer}</h2>
         <div className='pokedexPage__div__search'>
           <form className='pokedexPage__div__form' onSubmit={handleSearch}>

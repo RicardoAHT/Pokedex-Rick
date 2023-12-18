@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import { Link } from 'react-router-dom'
+import PokeHeader from '../components/PokeHeader'
+import PokeFooter from '../components/PokeFooter'
 
 const PokedexIdPages = () => {
 
@@ -15,6 +17,8 @@ const PokedexIdPages = () => {
   }, [id])
   
   return (
+  <>
+    <PokeHeader/>
     <article className='PokedexIdPage__container' >
       <div className={`PokedexIdPage ${firstType}-border`}>
         <div className={`PokedexIdPage__div1 ${firstType}-gradient`}>
@@ -39,8 +43,8 @@ const PokedexIdPages = () => {
               {
                 pokemon?.types.map(typeInfo =>(
                   <li className='PokedexIdPage__section2__div1__ul__li' key={typeInfo.type.url}>{typeInfo.type.name}</li>
-                ))
-              }
+                  ))
+                }
             </ul>
           </div>
           <div className='PokedexIdPage__section2__div2'>
@@ -49,8 +53,8 @@ const PokedexIdPages = () => {
               {
                 pokemon?.abilities.map(ability =>(
                   <li className='PokedexIdPage__section2__div2__ul__li' key={ability.ability.url} >{ability.ability.name}</li>
-                ))
-              }
+                  ))
+                }
             </ul>
           </div>
         </section>
@@ -73,7 +77,7 @@ const PokedexIdPages = () => {
               </div>
             </li>
         ))
-        }
+      }
         </ul>
         </div>
         <div className={`PokedexIdPage ${firstType}-border`}>
@@ -94,6 +98,8 @@ const PokedexIdPages = () => {
         </div>
         <button className='PokedexIdPage__button' > <Link to="/pokedex">Back</Link></button>
     </article>
+    <PokeFooter/>
+  </>
   )
 }
 
