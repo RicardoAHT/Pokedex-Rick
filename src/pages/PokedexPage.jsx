@@ -54,7 +54,7 @@ const PokedexPage = () => {
         <h2 className='pokedexPage__h2'>Hello {trainer}</h2>
         <div className='pokedexPage__div__search'>
           <form className='pokedexPage__div__form' onSubmit={handleSearch}>
-            <input className='pokedexPage__div__form__input'  type="text" ref={inputSearch} />
+            <input className='pokedexPage__div__form__input'  type="text" ref={inputSearch} placeholder='Search your Pokemon' />
             <button className='pokedexPage__div__form__button'>Search</button>
           </form>
           <SelectType
