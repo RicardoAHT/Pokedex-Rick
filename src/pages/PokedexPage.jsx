@@ -50,7 +50,7 @@ const PokedexPage = () => {
       <main className='pokedexPage'>
         <header className='pokedexPage__header'>
           <div className='pokedexPage__header__div1'> 
-            <img className='pokedexPage__header__img' src="/images/pokedex_title.png" alt="" />
+            <img className='pokedexPage__header__img' src="/src/assets/pokedex_title.png" alt="Pokedex" />
           </div>
           <div className='pokedexPage__header__div2'> </div>
         </header>

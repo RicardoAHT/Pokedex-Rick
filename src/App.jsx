@@ -5,6 +5,7 @@ import PokedexPage from './pages/PokedexPage';
 import PokedexIdPages from './pages/PokedexIdPages';
 import ProtectedRoutes from './pages/ProtectedRoutes';
 
+
 function App() {
 
   return (

@@ -5,7 +5,6 @@ export const trainerSlice = createSlice({
     initialState: "" ,
     reducers:{
         setTrainerSlice: (state, action) => action.payload
-
     }
 })
 

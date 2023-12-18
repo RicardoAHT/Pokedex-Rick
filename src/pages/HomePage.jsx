@@ -18,7 +18,7 @@ const HomePage = () => {
 
   return (
     <section className='homePage'>
-        <img className='homePage__img' src="/images/Pokedex_title.png" alt="" />
+        <img className='homePage__img' src="/src/assets/pokedex_title.png" alt="Pokedex" />
         <h1 className='homePage__h1'>¡Hello trainer!</h1>
         <p className='homePage__p'>To start, please enter your trainer nickname</p>
         <form className='homePage__form' onSubmit={handleTrainer}>
